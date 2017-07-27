@@ -1,0 +1,26 @@
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+md-card {
+  max-width: 70%;
+  margin: 2em auto;
+  text-align: center;
+  background-color: red;
+}
+
+md-toolbar-row {
+  justify-content: space-between;
+}
+
+.done {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+}
+
+.pippo
+{
+  background-color: red;
+}

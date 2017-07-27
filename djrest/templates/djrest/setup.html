@@ -1,0 +1,21 @@
+{% if created %}
+<table>
+    <caption>Well Done</caption>
+    <thead>
+      <tr>
+        <th>Server ID</th>
+        <th>Application ID</th>
+        <th>Start TimeStamp</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for item in created %}
+      <tr>
+          <td>{{item.server_id}}</td>
+          <td>{{item.application_id}}</td>
+          <td>{{item.start_timestamp}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endif %}

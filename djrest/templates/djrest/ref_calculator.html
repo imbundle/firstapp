@@ -1,0 +1,23 @@
+{% if items %}
+<table>
+    <caption>Well Done</caption>
+    <thead>
+      <tr>
+        <th>Server ID</th>
+        <th>Application ID</th>
+        <th>Start TimeStamp</th>
+        <th>REF</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for item in items %}
+      <tr>
+          <td>{{item.server_id}}</td>
+          <td>{{item.application_id}}</td>
+          <td>{{item.start_timestamp}}</td>
+          <td>{{item.ref}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endif %}
